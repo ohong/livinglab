@@ -40,6 +40,9 @@ gem 'devise'
 # Use toastr for notification
 gem 'toastr-rails'
 
+# Use sendgrid for email confirmation - skipping this feature :(
+# gem 'sendgrid-rails', '~> 2.0', '>= 2.0.5'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
