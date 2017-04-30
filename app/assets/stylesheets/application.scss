@@ -16,3 +16,15 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+ .profile-pic-small {
+   width: 48px;
+ }
+
+ .profile-pic-medium {
+   width: 68px;
+ }
+
+ .profile-pic-large {
+   width: 100%;
+ }
