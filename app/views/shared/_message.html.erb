@@ -1,0 +1,12 @@
+<!-- Use toastr gem to clean up flash messages -->
+<!-- refer to doc: https://github.com/tylergannon/toastr-rails -->
+<% unless flash.empty? %>
+  <script type="text/javascript">
+    <% flash.each do |f| %>
+      // replace 'alert' and 'notice' to fit toastr syntax
+      <% type = f[0].to_s.gsub('alert', 'error').gsub('notice', 'info') %>
+      // message type, message content
+      toastr['<%= type %>']('<%= f[1] %>')
+    <% end %>
+  </script>
+<% end %>

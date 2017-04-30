@@ -37,6 +37,9 @@ gem 'sass-rails', '>= 3.2'
 # Use Devise for user authentication
 gem 'devise'
 
+# Use toastr for notification
+gem 'toastr-rails'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

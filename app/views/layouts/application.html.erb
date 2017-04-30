@@ -11,10 +11,8 @@
   <body>
 
     <%= render 'shared/navbar' %>
-    
-    <!-- Flash alerts suggested by Devise -->
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+
+    <%= render 'shared/message' %>
 
     <div class="container">
       <%= yield %>
