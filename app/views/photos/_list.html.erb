@@ -10,7 +10,10 @@
           </div>
           <div class="panel-body">
             <span class="pull-right">
-              <i class="material-icons">delete</i>
+              <!-- using AJAX to delete photos -->
+              <%= link_to photo, remote: true, method: :delete do %>
+                <i class="material-icons">delete</i>
+              <% end %>
             </span>
           </div>
         </div>
