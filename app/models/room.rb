@@ -9,6 +9,6 @@ class Room < ApplicationRecord
   validates :bedroom, presence: true
   validates :bathroom, presence: true
   validates :listing_name, presence: true, length: {maximum: 50}
-  validates :summary, presence: true, length: {maximum: 500}
+  validates :summary, presence: true, length: {maximum: 800}
   validates :address, presence: true
 end

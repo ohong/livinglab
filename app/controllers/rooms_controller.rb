@@ -19,7 +19,7 @@ class RoomsController < ApplicationController
 
   def create
     @room = current_user.rooms.build(room_params)
-    if @rooms.save
+    if @room.save
       # create a photo entity for each image that a room has
       if params[:images]
         params[:images].each do |image|
@@ -39,6 +39,7 @@ class RoomsController < ApplicationController
       @photos = @room.photos
     else
       redirect_to root_path, notice: "You don't have permission to edit a home you don't own."
+    end
   end
 
   def update
@@ -58,9 +59,11 @@ class RoomsController < ApplicationController
     def set_room
       @room = Room.find(params[:id])
     end
+
     def room_params
       params.require(:room).permit(:home_type, :room_type, :accommodate,
       :bedroom, :bathroom, :listing_name, :summary, :address, :has_wifi,
       :is_furnished, :has_ac, :has_washer_dryer, :rent, :active)
     end
+
 end
