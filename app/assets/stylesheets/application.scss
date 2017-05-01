@@ -14,10 +14,6 @@
   width: 100%;
 }
 
-.description {
-
-}
-
 body {
   color: #565a5c;
   background-color: #F8F8F8;
@@ -37,7 +33,7 @@ body {
   font-weight: 400;
 }
 
-.btn-primary .btn {
+.btn-primary.btn {
   border: 1px solid #FF5A5F;
   border-radius: 2px;
   font-weight: bold;
@@ -46,20 +42,20 @@ body {
   padding: 10px 25px 10px 25px;
 }
 
-.btn-primary .btn:hover, .btn-primary .btn:focus, {
+.btn-primary.btn:hover, .btn-primary.btn:focus, {
   border-color: #ff7e82;
   border-bottom-color: #fa0008;
   background-color: #ff7e82;
   outline: none;
 }
 
-.btn-primary .btn:active {
+.btn-primary.btn:active {
   border-color: #e00007;
   background-color: #e00007;
   outline: none;
 }
 
-.btn-default .btn {
+.btn-default.btn {
   width: 100%;
   border-radius: 2px;
   padding: 10px 0;
@@ -93,4 +89,41 @@ body {
   font-size: 15px;
   font-weight: 500;
   line-height: 25px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-control {
+  border-radius: 2px;
+  height: 4rem;
+}
+
+.sidebar-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.sidebar-item {
+  padding: 10px 0;
+  font-size: 16px;
+  color: #82888a;
+  border-bottom: 1px solid #CCC;
+}
+
+.sidebar-link {
+  color: #82888a;
+  text-decoration: none;
+}
+
+.sidebar-link:hover, .sidebar-link:focus {
+  color: #cacccd;
+  text-decoration: none;
+}
+
+.active.sidebar-link {
+  color: #565a5c;
+  font-weight: bold;
+  text-decoration: none;
 }
