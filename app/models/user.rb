@@ -7,4 +7,7 @@ class User < ApplicationRecord
 
   # Validation for Full Name
   validates :fullname, presence: true, length: {in: 4..50}
+
+  has_many :rooms
+
 end
