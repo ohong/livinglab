@@ -7,7 +7,8 @@ Rails.application.routes.draw do
 
   # only want to create url path for showing users only
   resources :users, only: [:show]
-
   # no restriction on rooms
   resources :rooms
+  # route to photos
+  resources :photos
 end
