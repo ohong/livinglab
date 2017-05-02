@@ -2,6 +2,10 @@ class Room < ApplicationRecord
   belongs_to :user
   has_many :photos
 
+  # get lat and long w/ address
+  geocoded_by :address, :latitude  => :lat, :longitude => :long #ActiveRecord
+  after_validation :geocode, if: :address_changed?
+
   # validate room
   validates :home_type, presence: true
   validates :room_type, presence: true
