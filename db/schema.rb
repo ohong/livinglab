@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170501060339) do
+ActiveRecord::Schema.define(version: 20170502003143) do
 
   create_table "photos", force: :cascade do |t|
     t.integer  "room_id"
@@ -26,8 +26,7 @@ ActiveRecord::Schema.define(version: 20170501060339) do
   create_table "rooms", force: :cascade do |t|
     t.string   "home_type"
     t.string   "room_type"
-    t.string   "accommodate"
-    t.string   "integer"
+    t.integer  "accommodate"
     t.integer  "bedroom"
     t.integer  "bathroom"
     t.string   "listing_name"
