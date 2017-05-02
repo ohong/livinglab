@@ -15,3 +15,4 @@
 //= require toastr
 //= require_tree .
 //= require bootstrap-sprockets
+//= require private_pub

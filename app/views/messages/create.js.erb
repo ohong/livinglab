@@ -1,0 +1,8 @@
+// corresponds to the create action in messages_controller
+// jQuery script for some sweet sweet AJAX!
+<% publish_to conversation_messages_path(@conversation) do %>
+  $('#chat').prepend("<%= j render @message %>");
+<% end %>
+// the form's ID by default is #new_message
+// clear text area after sending message
+$('#new_message')[0].reset();

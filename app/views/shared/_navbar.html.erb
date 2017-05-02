@@ -8,7 +8,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">LivingLAB</a>
+      <%= link_to "LivingLAB", root_path, class: "navbar-brand" %>
+      <!-- <a class="navbar-brand" href="#">LivingLAB</a> -->
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
@@ -36,10 +37,14 @@
         <% end %>
 
         <li>
-          <a href="#"><i class="material-icons">message</i> Messages</a>
+          <%= link_to conversations_path do %>
+            <i class="material-icons">message</i> Messages
+          <% end %>
         </li>
         <li>
-          <a href="#"><i class="material-icons">home</i> List Your Home</a>
+          <%= link_to new_room_path do %>
+            <i class="material-icons">home</i> List Your Home
+          <% end %>
         </li>
 
       </ul>
