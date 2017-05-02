@@ -11,4 +11,8 @@ Rails.application.routes.draw do
   resources :rooms
   # route to photos
   resources :photos
+  # route to messages within conversations
+  resources :conversations, only: [:index, :create] do
+    resources :messages, only: [:index, :create]
+  end
 end
