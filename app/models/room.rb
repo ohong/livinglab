@@ -1,6 +1,6 @@
 class Room < ApplicationRecord
   belongs_to :user
-  has_many :photos
+  has_many :photos, dependent: :destroy
 
   # get lat and long w/ address
   geocoded_by :address, :latitude  => :lat, :longitude => :long #ActiveRecord
