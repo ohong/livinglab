@@ -26,26 +26,30 @@
               <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="#">Your Trips</a></li>
-              <li><a href="#">Wish Lists</a></li>
-              <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
+              <li>
+                <%= link_to conversations_path do %>
+                  <i class="material-icons">message</i> Messages
+                <% end %>
+              </li>
+              <li>
+                <%= link_to new_room_path do %>
+                  <i class="material-icons">home</i> List Your Home
+                <% end %>
+              </li>
               <li role="separator" class="divider"></li>
-              <li><a href="#">Account Settings</a></li>
-              <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
+              <li>
+                <%= link_to edit_user_registration_path do %>
+                  <i class="material-icons">person</i> Edit Profile
+                <% end %>
+              </li>
+              <li>
+                <%= link_to destroy_user_session_path, method: :delete do %>
+                  <i class="material-icons">exit_to_app</i> Log Out
+                <% end %>
+              </li>
             </ul>
           </li>
         <% end %>
-
-        <li>
-          <%= link_to conversations_path do %>
-            <i class="material-icons">message</i> Messages
-          <% end %>
-        </li>
-        <li>
-          <%= link_to new_room_path do %>
-            <i class="material-icons">home</i> List Your Home
-          <% end %>
-        </li>
 
       </ul>
     </div>
