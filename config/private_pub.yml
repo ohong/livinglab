@@ -7,4 +7,4 @@ test:
 production:
   server: "https://damp-temple-86099.herokuapp.com/faye"
   secret_token: "18fe73fb24fc821e446fce2a123a0fd80331144333ffe6e5578a89f707507644"
-  signature_expiration: 3600 # one hour
+  signature_expiration: 86400 # one day

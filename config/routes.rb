@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   root 'pages#home'
   devise_for  :users,
               :path => '',
-              :path_names => {:sign_in => 'login', :sign_out => 'logout', :edit => 'profile'}
+              # shortcut for routs e.g. /users/sign_in = /login
+              :path_names => {:sign_in => 'login', :sign_out => 'logout', :edit => 'profile'},
+              :controllers => {:omniauth_callbacks => 'omniauth_callbacks'}
 
   # only want to create url path for showing users only
   resources :users, only: [:show]

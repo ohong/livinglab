@@ -48,8 +48,9 @@ gem 'geocoder'
 gem 'private_pub'
 gem 'thin'
 
-# Use sendgrid for email confirmation - skipping this feature :(
-# gem 'sendgrid-rails', '~> 2.0', '>= 2.0.5'
+# Use omniauth and omniauth-facebook for Facebook User Authentication
+gem 'omniauth'
+gem 'omniauth-facebook'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
