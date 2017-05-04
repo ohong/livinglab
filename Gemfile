@@ -47,7 +47,6 @@ gem 'geocoder'
 # Use private_pub and thin for real-time messaging
 gem 'private_pub'
 gem 'thin'
-gem 'foreman'
 
 # Use sendgrid for email confirmation - skipping this feature :(
 # gem 'sendgrid-rails', '~> 2.0', '>= 2.0.5'

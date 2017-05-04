@@ -3,8 +3,7 @@ class CreateRooms < ActiveRecord::Migration[5.0]
     create_table :rooms do |t|
       t.string :home_type
       t.string :room_type
-      t.string :accommodate
-      t.string :integer
+      t.integer :accommodate
       t.integer :bedroom
       t.integer :bathroom
       t.string :listing_name
